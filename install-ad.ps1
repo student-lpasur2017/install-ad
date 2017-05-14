@@ -9,4 +9,4 @@ Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools -Include
 # Import module pour avoir les cmdelts de conf pour AD
 Import-Module ADDSDeployment
 # /!\ Commande a tester et a la rendre dynamique si possible
-Install-ADDSForest -CreateDnsDelegation False -DatabasePath "C:\Windows\NTDS" -DomainMode "Win2012R2" -DomainName "mycompany.com" -DomainNetbiosName "MYCOMPANY" -Forest%ode "Win2012R2" -InstallDns True -LogPath "C:\Windows\NTDS" -NoRebootOnCompletion False -SysvolPath "C:\Windows\SYSVOL" -Force True
+Install-ADDSForest -CreateDnsDelegation False -DatabasePath "C:\Windows\NTDS" -DomainMode "Win2012R2" -DomainName "mycompany.com" -DomainNetbiosName "MYCOMPANY" -Forestmode "Win2012R2" -InstallDns True -LogPath "C:\Windows\NTDS" -NoRebootOnCompletion False -SysvolPath "C:\Windows\SYSVOL" -Force True
